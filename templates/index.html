@@ -6,12 +6,12 @@
     <title>register</title>
     <style>
         body{
-            background-color: rebeccapurple;
+            background-color: rebeccapurple;color: aliceblue;
         }
         label{
             width: 7%;
             display: inline-block;
-            color: aliceblue;
+            
             font-size: larger;
             padding: 10px;
             
@@ -20,7 +20,7 @@
 </head>
 <body>
     <h1>REGISTERATION USING FLASK</h1>
-    <form action="/verify" method="post">
+    <form action="/" method="post">
     <label for="name">username:</label>
     <input type="text" id="name" name="username">
     <br>
@@ -33,5 +33,6 @@
     <label></label>
     <input type="submit" value="register">
 </form>
+<h2>{{returning}}</h2>
 </body>
 </html>
