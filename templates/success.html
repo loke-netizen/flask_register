@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Successfully Registered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='success.css') }}">
 </head>
+
 <body>
-    <h1>successfully registerd</h1>
-    <p>username:<i>{{user}}{{id}}</i></p>
-   
+
+<div class="box">
+    <h1>Successfully Registered ✅</h1>
+
+    <p>Username: <i>{{ user }}</i></p>
+    <p>Password: <i>{{ id }}</i></p>
+
+</div>
+
 </body>
 </html>

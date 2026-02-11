@@ -15,7 +15,7 @@ def homepage():
             if name=="admin" and email=="code" and id=="1234":
                 return redirect("/verify/"+ name+"/"+id)
             else:
-                returning="wrong check"
+                returning="wrong.check it !!"
                 
         return render_template("index.html",returning=returning)
 

@@ -2,37 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
-    <style>
-        body{
-            background-color: rebeccapurple;color: aliceblue;
-        }
-        label{
-            width: 7%;
-            display: inline-block;
-            
-            font-size: larger;
-            padding: 10px;
-            
-        }
-    </style>
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <h1>REGISTERATION USING FLASK</h1>
+
+<div class="container">
+    <h1>Registration Using Flask</h1>
+
     <form action="/" method="post">
-    <label for="name">username:</label>
-    <input type="text" id="name" name="username">
-    <br>
-    <label for="email">useremail:</label>
-    <input type="text" id="email" name="email">
-    <br>
-    <label for="id">userid:</label>
-    <input type="text" id="id" name="id">
-    <br>
-    <label></label>
-    <input type="submit" value="register">
-</form>
-<h2>{{returning}}</h2>
+
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter username" required>
+
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Enter email" required>
+
+        <label>User ID</label>
+        <input type="text" name="id" placeholder="Enter ID" required>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <h2>{{ returning }}</h2>
+
+</div>
+
 </body>
 </html>
